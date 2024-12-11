@@ -58,15 +58,7 @@ def FA2(session,url):
         if count >1:
             count=0
             csrf_token=login(session,url)
-
-
-
-
     
-    
-    
-    
-
 
 def main():
     if len(sys.argv) != 2:
