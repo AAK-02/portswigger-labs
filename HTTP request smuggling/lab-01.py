@@ -4,7 +4,7 @@ import requests
 import urllib3
 import sys
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
+"""HTTP request smuggling, confirming a CL.TE vulnerability via differential responses"""
 def send_smuggling_request_twice(target_host, target_port):
     #  smuggling payload
     smuggling_payload = (
