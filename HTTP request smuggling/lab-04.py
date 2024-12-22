@@ -81,7 +81,6 @@ def main():
         sys.exit(1)
     
     target_host=sys.argv[1]
-    print(target_host)
     target_port=443
     TE_CL_BYPASS_SECURITY(target_host,target_port)
 
