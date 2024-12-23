@@ -62,7 +62,7 @@ def TE_CL_BYPASS_SECURITY(target_host,target_port):
                         else:
                             pass
 
-                elif "504 Gateway Timeout":  #check if the host down or not 
+                elif "504 Gateway Timeout" in response_smuggling.decode(errors="Ignore",encoding="utf-8"):  #check if the host down or not 
                     print("(-) No response received from the server .")
                     sys.exit()
                 else:
