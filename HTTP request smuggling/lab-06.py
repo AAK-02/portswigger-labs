@@ -190,7 +190,7 @@ def CL_TE_CAPTURE_ADMIN_SESSION(target_host,target_port,csrf_token,session):
 #main function
 def main():
     try:
-        #check the length of the argv that we give 
+        #check  the argv that we give 
         if len(sys.argv) !=2:
             print('(+) Usage %s <url>'%sys.argv[0])
             print('(+) Example %s xxxxxxxxxxxxxxxxxxxxxxx.web-security-academy.net'%sys.argv[0])
